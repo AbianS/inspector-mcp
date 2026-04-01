@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "inspector": {
+      "type": "stdio",
+      "command": "node",
+      "args": ["./packages/inspector-mcp/build/index.js"]
+    }
+  }
+}

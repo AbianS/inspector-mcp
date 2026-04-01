@@ -1,0 +1,135 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.4.10/schema.json",
+  "css": {
+    "parser": {
+      "cssModules": false,
+      "tailwindDirectives": true
+    }
+  },
+  "files": {
+    "includes": [
+      "**",
+      "!**/node_modules",
+      "!**/dist",
+      "!**/build",
+      "!**/.turbo",
+      "!**/coverage"
+    ]
+  },
+  "formatter": {
+    "includes": [
+      "**",
+      "!**/node_modules",
+      "!**/dist",
+      "!**/build",
+      "!**/.turbo",
+      "!**/coverage"
+    ],
+    "enabled": true,
+    "formatWithErrors": false,
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineEnding": "lf",
+    "lineWidth": 80,
+    "attributePosition": "auto"
+  },
+  "assist": {
+    "actions": {
+      "source": {
+        "organizeImports": "on"
+      }
+    }
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+      "correctness": {
+        "noChildrenProp": "off",
+        "useExhaustiveDependencies": "off",
+        "noUnsafeOptionalChaining": "off",
+        "noSwitchDeclarations": "off",
+        "useJsxKeyInIterable": "off",
+        "noUnusedImports": "warn",
+        "noInvalidDirectionInLinearGradient": "off",
+        "useHookAtTopLevel": "off",
+        "noUnusedFunctionParameters": "off",
+        "useUniqueElementIds": "off",
+        "useParseIntRadix": "off",
+        "noNestedComponentDefinitions": "off",
+        "noUnusedPrivateClassMembers": "off"
+      },
+      "performance": {
+        "noAccumulatingSpread": "off"
+      },
+      "style": {
+        "useFilenamingConvention": {
+          "level": "error",
+          "options": {
+            "strictCase": true,
+            "filenameCases": ["kebab-case", "export"],
+            "requireAscii": true
+          }
+        },
+        "noDescendingSpecificity": "off",
+        "noNonNullAssertion": "off",
+        "noParameterAssign": "off",
+        "useTemplate": "off",
+        "useImportType": "off",
+        "noUselessElse": "off",
+        "useShorthandFunctionType": "off",
+        "useEnumInitializers": "off",
+        "useDefaultParameterLast": "off",
+        "useAsConstAssertion": "error",
+        "useSelfClosingElements": "error",
+        "useSingleVarDeclarator": "error",
+        "noUnusedTemplateLiteral": "error",
+        "useNumberNamespace": "error",
+        "noInferrableTypes": "off"
+      },
+      "complexity": {
+        "noStaticOnlyClass": "off",
+        "noBannedTypes": "off",
+        "noForEach": "off",
+        "useLiteralKeys": "off",
+        "noImportantStyles": "off"
+      },
+      "a11y": {
+        "useButtonType": "off",
+        "useKeyWithClickEvents": "off",
+        "noSvgWithoutTitle": "off",
+        "noStaticElementInteractions": "off"
+      },
+      "suspicious": {
+        "noExplicitAny": "off",
+        "noArrayIndexKey": "off",
+        "noPrototypeBuiltins": "off",
+        "noUnknownAtRules": "off"
+      }
+    },
+    "includes": [
+      "**",
+      "!**/node_modules",
+      "!**/dist",
+      "!**/build",
+      "!**/.turbo",
+      "!**/coverage"
+    ]
+  },
+  "javascript": {
+    "parser": {
+      "unsafeParameterDecoratorsEnabled": true
+    },
+    "formatter": {
+      "jsxQuoteStyle": "double",
+      "quoteProperties": "asNeeded",
+      "trailingCommas": "all",
+      "semicolons": "always",
+      "arrowParentheses": "always",
+      "bracketSpacing": true,
+      "bracketSameLine": false,
+      "quoteStyle": "single",
+      "attributePosition": "auto"
+    }
+  }
+}

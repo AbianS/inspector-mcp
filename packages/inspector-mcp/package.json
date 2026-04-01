@@ -1,0 +1,57 @@
+{
+  "name": "inspector-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for debugging live Node.js processes via Chrome DevTools Protocol",
+  "type": "module",
+  "author": "AbianS",
+  "repository": "https://github.com/AbianS/inspector-mcp",
+  "license": "MIT",
+  "files": [
+    "build"
+  ],
+  "main": "./build/index.js",
+  "bin": {
+    "inspector-mcp": "./build/index.js"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "check-types": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.29.0",
+    "chrome-remote-interface": "0.34.0",
+    "source-map": "0.7.6",
+    "zod": "4.3.6"
+  },
+  "devDependencies": {
+    "@types/chrome-remote-interface": "0.33.0",
+    "@types/node": "25.5.0",
+    "@types/source-map": "0.5.2",
+    "@vitest/coverage-v8": "4.1.2",
+    "tsup": "8.5.1",
+    "typescript": "6.0.2",
+    "vitest": "4.1.2"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "debugger",
+    "nodejs",
+    "inspector",
+    "chrome-devtools-protocol",
+    "cdp",
+    "breakpoints",
+    "source-maps",
+    "typescript",
+    "ai",
+    "llm",
+    "cursor"
+  ],
+  "engines": {
+    "node": ">=18"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "e2e",
+  "version": "0.1.0",
+  "description": "E2E test server for inspector-mcp — a live Node.js process to debug",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node build/server.js",
+    "inspect": "node --inspect=9229 build/server.js",
+    "inspect-brk": "node --inspect-brk=9229 build/server.js",
+    "dev": "tsc -p tsconfig.json && node --inspect=9229 build/server.js"
+  },
+  "devDependencies": {
+    "@types/node": "25.5.0",
+    "typescript": "6.0.2"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
