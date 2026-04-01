@@ -1,6 +1,6 @@
 {
   "name": "inspector-mcp",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "MCP server for debugging live Node.js processes via Chrome DevTools Protocol",
   "type": "module",
   "author": "AbianS",
